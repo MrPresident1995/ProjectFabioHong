@@ -4,10 +4,10 @@ Si sviluppi una web application, tramite servlet Java, JSP (Java Sever Pages) e 
 
 - Abbia una pagina index.jsp come punto di ingresso predefinito dell’applicazione. In tale pagina si effettua login tramite un form che comprenda un nome utente e una password.       Sia un servlet a occuparsi delle procedure di login:
           
-          -- Se l’utente effettua il login per la prima volta (nome utente non ancora presente nel database di appoggio) si accetta sempre il login come valido a meno che                    l’utente o la relativa password non siano vuoti. Quindi si registra l’utente e la relativa password nel database di appoggio.
           -- Se l’utente effettua il login essendo già registrato (nome utente già presente nel database di appoggio) si accetta il login come valido solo se la password                    corrisponde a quella immessa al momento della registrazione e se sia nome utente che password non sono vuoti.
           -- Se il login è accettato come valido si procede a una pagina web login.jsp che mostri il nome utente (come attributo di sessione) e la password (come attributo di              richiesta), accanto ad un link che conduca a WebConverter (simile a quello fatto a lezione).
           -- Se il login non è accettato come valido si reindirizza a index.jsp, mostrando un testo di errore.
+          -- Se l’utente effettua il login per la prima volta (nome utente non ancora presente nel database di appoggio) si accetta sempre il login come valido a meno che l’utente o la relativa password non siano vuoti. Quindi si registra l’utente e la relativa password nel database di appoggio.
 - Si aggiunga all’applicazione del punto 1. un filtro che effettui il log dell’URI di ogni risorsa richiesta, mappato su ogni URL.
 - Si aggiunga all’applicazione del punto 1. un filtro che effettui il log dei parametri (nome e valore) di ogni richiesta HTTP, mappato su ogni URL.
 - Si aggiunga all’applicazione del punto 1. un filtro che reindirizzi ogni richiesta a index.jsp e al servlet associato alla procedura di login su login.jsp se la sessione è valida (utente già loggato)
