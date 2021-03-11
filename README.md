@@ -1,6 +1,7 @@
 # ProjectFabioHong
 
 Si sviluppi una web application, tramite servlet Java, JSP (Java Sever Pages) e filters Java, chiamata Project# (inserire il vostro nome e cognome al posto di #). L’applicazione è dotata di un database MySQL di appoggio e ha una struttura simile all’applicazione WebLoginSecure (fatta a lezione), e rispetta la suddivisione in 3 layer (presentazione, business logic o applicazione, dati). L’applicazione deve inoltre avere le seguenti caratteristiche:
+
   a. Abbia una pagina index.jsp come punto di ingresso predefinito dell’applicazione. In tale pagina si effettua login tramite un form che comprenda un nome utente e una password.       Sia un servlet a occuparsi delle procedure di login:
           i. Se l’utente effettua il login per la prima volta (nome utente non ancora presente nel database di appoggio) si accetta sempre il login come valido a meno che l’utente           o la relativa password non siano vuoti. Quindi si registra l’utente e la relativa password nel database di appoggio.
           ii. Se l’utente effettua il login essendo già registrato (nome utente già presente nel database di appoggio) si accetta il login come valido solo se la password                    corrisponde a quella immessa al momento della registrazione e se sia nome utente che password non sono vuoti.
