@@ -1,5 +1,15 @@
 # ProjectFabioHong
 
+Un file di testo contiene una matrice di interi con il seguente formato:
+- la prima riga del file specifica le dimensioni reali della matrice (numero di righe nr e numero di colonne nc). Si assuma che entrambi i valori siano comunque al più pari a 20
+- ciascuna delle nr righe successive contiene gli nc valori corrispondenti a una riga della matrice, separati da uno o più spazi.
+
+
+Si scriva un programma C che:
+- legga tale matrice dal file di ingresso
+- generi una nuova matrice, in cui il valore di ciascun elemento è dato dalla media aritmetica delle (al più) 8 caselle adiacenti all’elemento corrispondente della matrice di ingresso
+- scriva la matrice così ottenuta su un file di uscita, con lo stesso formato del file di ingresso.
+
 Si sviluppi una web application, tramite servlet Java, JSP (Java Sever Pages) e filters Java, chiamata Project# (inserire il vostro nome e cognome al posto di #). L’applicazione è dotata di un database MySQL di appoggio e ha una struttura simile all’applicazione WebLoginSecure (fatta a lezione), e rispetta la suddivisione in 3 layer (presentazione, business logic o applicazione, dati). L’applicazione deve inoltre avere le seguenti caratteristiche:
 
 -1 vwevwevwe
