@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <display-name>ProjectFabioHong</display-name>
+    <welcome-file>index.jsp</welcome-file>
+
+    <servlet>
+        <servlet-name>
+            LoginHttpServlet
+        </servlet-name>
+
+        <servlet-class>
+            it.itsvita.byte19.ufc9.servlets.LoginHttpServlet
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            LoginHttpServlet
+        </servlet-name>
+
+        <url-pattern>
+            /login
+        </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>
+            ConverterServlet
+        </servlet-name>
+
+        <servlet-class>
+            it.itsvita.byte19.ufc9.servlets.ConverterServlet
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            ConverterServlet
+        </servlet-name>
+
+        <url-pattern>
+            /converter
+        </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>
+        	LogoutHttpServlet
+        </servlet-name>
+        
+        <servlet-class>
+        	it.itsvita.byte19.ufc9.servlets.LogoutHttpServlet
+        </servlet-class>
+    </servlet>
+	
+	<servlet-mapping>
+        <servlet-name>
+        	LogoutHttpServlet
+        </servlet-name>
+        
+        <url-pattern>
+        	/logout
+        </url-pattern>
+    </servlet-mapping>
+    
+    <filter>
+        <filter-name>RequestUriLoggerFilter</filter-name>
+        <filter-class>it.itsvita.byte19.ufc9.filters.RequestUriLoggerFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>RequestUriLoggerFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+    
+    <filter>
+        <filter-name>RequestParameterFilter</filter-name>
+        <filter-class>it.itsvita.byte19.ufc9.filters.RequestParameterFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>RequestParameterFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+</web-app>
